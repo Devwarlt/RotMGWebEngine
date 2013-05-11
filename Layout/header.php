@@ -33,13 +33,33 @@ include ('/engine/functions.php');
         <a class="brand" href="#"><?PHP echo $config['server_name']; ?></a>
           <ul class="nav">
                   <li><a href="/index.php"><i class="icon-home icon-white"></i> <b>Home</b></a></li>
-                  <li><a href="/login.php"><i class="icon-user icon-white"></i> <b>Login</b></a></li>
+
+                  <?PHP
+
+                  if ($_SESSION['loged'] == 1) {
+
+                    echo '<li><a href="/myaccount.php"><i class="icon-user icon-white"></i> <b>Account</b></a></li>';
+
+                  } else {
+
+                  echo '<li><a href="/login.php"><i class="icon-user icon-white"></i> <b>Login</b></a></li>';
+
+                  }
+
+                  ?>
                   <li><a href="/about.php"><i class="icon-book icon-white"></i> <b>About</b></a></li>
                   <li class="dropdown">
-                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-white icon-user"></i> Community <b class="caret"></b></a>
+                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-white icon-bullhorn"></i> <b>Community</b> <b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li><a tabindex="-1" href="topfame.php">Top fame</a></li>
                         <li><a tabindex="-1" href="deaths.php">Lastest deaths</a></li>
+                      </ul>
+                  </li>  
+                  <li class="dropdown">
+                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-white icon-folder-open"></i> <b>Library</b> <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                        <li><a tabindex="-1" href="monsters.php">Monsters</a></li>
+                        <li><a tabindex="-1" href="items.php">Items</a></li>
                       </ul>
                   </li>  
           </ul>      

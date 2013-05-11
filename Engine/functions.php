@@ -130,6 +130,80 @@
 			}
 		}
 
+		public static function serverItems() {
+
+			include ('/config/config.php');
+			echo '<table class="table table-striped"><thead><tr><td><b>Name</b></td><td><b>Hit points</b></td></tr></thead>';	
+			foreach (glob($config['item_directory']."*.xml") as $filename) {
+
+				$xml = simplexml_load_file($filename);
+			
+				foreach ($xml->children() as $child) {
+
+					if ($child->Class == 'Equipment') {
+
+				  		echo '<tr><td>'.$child->attributes()->id.'</td><td>'.$child->Description.'</td><td>'.$child->MinDamage.'</td><td>'.$terrain.'</td></tr>';
+
+				  	}
+
+				}
+		    }
+
+				echo '</table>';	  
+		}
+
+		public static function serverMonsters() {
+
+			include ('/config/config.php');
+			echo '<table class="table table-striped"><thead><tr><td><b>Name</b></td><td><b>Hitpoints</b></td><td><b>Defense</b></td><td><b>Spawns in</b></td></tr></thead>';	
+			foreach (glob($config['item_directory']."*.xml") as $filename) {
+
+				$xml = simplexml_load_file($filename);
+			
+				foreach ($xml->children() as $child) {
+
+					if ($child->Class == 'Character') {
+
+						if (empty($child->Terrain)) {
+
+							$terrain = 'Unknown';
+
+						} else {
+
+							$terrain = $child->Terrain;
+
+						}
+
+						if (empty($child->Defense)) {
+
+							$defense = 'Unknown';
+
+						} else {
+
+							$defense = $child->Defense;
+
+						}
+
+						if (empty($child->MaxHitPoints)) {
+
+							$hp = 'Unknown';
+
+						} else {
+
+							$hp = $child->MaxHitPoints;
+
+						}
+				  	
+				  		echo '<tr><td>'.$child->attributes()->id.'</td><td>'.$hp.'</td><td>'.$defense.'</td><td>'.$terrain.'</td></tr>';
+
+				  	}
+
+				}
+		    }
+
+				echo '</table>';	  
+		}
+
 		public static function removeNews($id) {
 
 			$remove = Database::$db->prepare('DELETE FROM `news` WHERE `id` = :id');
@@ -138,6 +212,37 @@
 			if ($remove->execute()) {
 
 				self::AlertSuccess('News item removed !');
+
+			}
+		}
+
+		public static function getCategories() {
+
+			$categories = Database::$db->prepare('SELECT * FROM `forum` ORDER BY `id` DESC');
+
+			if ($categories->execute()) {
+
+				$category = $categories->fetchAll(PDO::FETCH_ASSOC);
+				echo '<br><table class="table-striped" width="100%">';
+
+				foreach ($category as $display) {
+
+					echo '<tr><td><b><a href="forumsee.php?id='.$display['id'].'">'.$display['title'].'</a></b><br>'.$display['desc'].'</td><td width="15%">Posts : <b>1999</b></td></tr>';
+
+				}
+
+				echo '</table>';
+			}
+		}
+
+		public static function getTopics($id) {
+
+			$getopics = Database::$db->prepare('SELECT * FROM `category_topic` WHERE `id` = :id');
+			$getopics->bindParam(':id',$id,PDO::PARAM_INT);
+
+			if ($getopics->execute()) {
+
+				$topics = $getopics->fetchAll(PDO::FETCH_ASSOC);
 
 			}
 		}
@@ -245,13 +350,31 @@
 				if ($editlink->execute()) {
 
 
-
 				}
 			}
 		}
 	}
 
 	class Check {
+
+		public static function checkForum($idd) {
+
+			$forum = Database::$db->prepare('SELECT `id` FROM `forum` WHERE `id` = :em');
+			$forum->bindParam(':em',$idd,PDO::PARAM_INT);
+
+			if ($forum->execute()) {
+
+				if ($forum->rowCount() == 0) {
+
+					return true;
+
+				} else {
+
+					return false;
+
+				}
+			}
+		}
 
 		public static function checkNews($id) {
 
