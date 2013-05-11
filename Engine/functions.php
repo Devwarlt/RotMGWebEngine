@@ -77,6 +77,18 @@
 			}
 		}
 
+		public static function removeNews($id) {
+
+			$remove = Database::$db->prepare('DELETE FROM `news` WHERE `id` = :id');
+			$remove->bindParam(':id',$id,PDO::PARAM_INT);
+
+			if ($remove->execute()) {
+
+				self::AlertSuccess('News removed !');
+
+			}
+		}
+
 		public static function getNews($id) {
 
 			$getshit = Database::$db->prepare("SELECT * FROM `news` WHERE `id` = :id");
@@ -187,6 +199,21 @@
 	}
 
 	class Check {
+
+		public static function checkNews($id) {
+
+			$check = Database::$db->prepare('SELECT `id` FROM `news` WHERE `id` = :id');
+			$check->bindParam(':id',$id,PDO::PARAM_INT);
+
+			if ($check->execute()) {
+
+				if ($check->rowCount() == 0) {
+
+					Display::AlertError('Wrong news ID !');
+					return false;
+				}
+			}
+		}
 
 		public static function checkEmail($emaill) {
 
