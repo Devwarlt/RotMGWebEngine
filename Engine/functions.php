@@ -19,6 +19,59 @@
 
 	class Display {
 
+		public static function lastDeaths() {
+
+			$getdeaths = Database::$db->prepare('SELECT * FROM `death` ORDER BY `time` DESC LIMIT 15');
+
+			if ($getdeaths->execute()) {
+
+				$deaths = $getdeaths->fetchAll(PDO::FETCH_ASSOC);
+				echo '<table class="table table-striped"><thead><tr><td><b>Name</b></td><td><b>At level</b></td><td><b>Killed by</b></td><td><b>Time</b></td></tr></thead>';
+
+				foreach ($deaths as $display) {
+
+					$getcharinfo = Database::$db->prepare('SELECT `level` FROM `characters` WHERE `id` = :id');
+					$getcharinfo->bindParam(':id',$display['chrId'],PDO::PARAM_INT);
+
+					if ($getcharinfo->execute()) {
+
+						$levels = $getcharinfo->fetch(PDO::FETCH_ASSOC);
+						echo '<tr><td>'.$display['name'].'</td><td>'.$levels['level'].'</td><td>'.$display['killer'].'</td><td>'.$display['time'].'</td></tr>';
+
+					}
+				}
+
+				echo '</table>';
+			}
+		}
+
+		public static function topFame() {
+
+			$getfames = Database::$db->prepare('SELECT * FROM `stats` ORDER BY `fame` DESC LIMIT 30');
+
+			if ($getfames->execute()) {
+
+				$info = $getfames->fetchAll(PDO::FETCH_ASSOC);
+				echo '<table class="table table-striped"><thead><tr><td><b>Name</b></td><td><b>Fame</b></td><td><b>Credits</b></td></tr></thead>';
+
+				foreach ($info as $display) {
+
+					$getnames = Database::$db->prepare('SELECT `name` FROM `accounts` WHERE `id` = :id');
+					$getnames->bindParam(':id',$display['accId'],PDO::PARAM_INT);
+
+					if ($getnames->execute()) {
+
+						$names = $getnames->fetch(PDO::FETCH_ASSOC);
+						echo '
+						<tr><td>'.$names['name'].'</td><td>'.$display['fame'].'</td><td>'.$display['credits'].'</td></tr>';
+
+					}	
+				}
+
+				echo '</table>';
+			}
+		}
+
 		public static function News() {
 
 			$news = Database::$db->prepare("SELECT * FROM `news` ORDER BY `id` DESC LIMIT 5");

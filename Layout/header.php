@@ -38,10 +38,8 @@ include ('/engine/functions.php');
                   <li class="dropdown">
                       <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-white icon-user"></i> Community <b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                        <li><a tabindex="-1" href="/index.php/highscores">Highscores</a></li>
-                        <li><a tabindex="-1" href="/index.php/onlinelist">Online list</a></li>
-                        <li><a tabindex="-1" href="/index.php/forum">Forum</a></li>
-                        <li><a tabindex="-1" href="/index.php/search">Search character</a></li>
+                        <li><a tabindex="-1" href="topfame.php">Top fame</a></li>
+                        <li><a tabindex="-1" href="deaths.php">Lastest deaths</a></li>
                       </ul>
                   </li>  
           </ul>      
