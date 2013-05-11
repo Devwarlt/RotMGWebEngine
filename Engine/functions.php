@@ -137,7 +137,7 @@
 
 			if ($remove->execute()) {
 
-				self::AlertSuccess('News removed !');
+				self::AlertSuccess('News item removed !');
 
 			}
 		}
@@ -151,7 +151,7 @@
 
 				if ($getshit->rowCount() == 0) {
 
-					self::AlertError('Wrong ID');
+					self::AlertError('Wrong news item ID');
 
 
 				} else {
@@ -262,7 +262,7 @@
 
 				if ($check->rowCount() == 0) {
 
-					Display::AlertError('Wrong news ID !');
+					Display::AlertError('Wrong news item ID !');
 					return false;
 				}
 			}
