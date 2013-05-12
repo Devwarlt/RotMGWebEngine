@@ -133,7 +133,7 @@
 		public static function serverItems() {
 
 			include ('/config/config.php');
-			echo '<table class="table table-striped"><thead><tr><td><b>Name</b></td><td><b>Hit points</b></td></tr></thead>';	
+			echo '<table class="table table-striped"><thead><tr><td><b>Name</b></td><td><b>Description</b></td></tr></thead>';	
 			foreach (glob($config['item_directory']."*.xml") as $filename) {
 
 				$xml = simplexml_load_file($filename);
@@ -150,6 +150,36 @@
 		    }
 
 				echo '</table>';	  
+		}
+
+		public static function loadMonster($name) {
+
+			include ('/config/config.php');
+
+			foreach (glob($config['item_directory']."*xml") as $file) {
+
+				$xml = simplexml_load_file($file);	
+
+				foreach ($xml->children() as $child) {
+
+					if ($child->attributes()->id == $name) {
+
+						$exi = true;
+						echo 'Monster name : <b>'.$child->attributes()->id.'</b><br>
+						Monster group : <b>'.$child->Group.'</b><br>
+						Hitpoints : <b>'.$child->MaxHitPoints.'</b><br>
+						Defense : <b>'.$child->Defense.'</b><br>
+						Terrain : <b>'.$child->Terrain.'</b><br>
+						Attack animation : <b>'.$child->Projectile->ObjectId.'</b><br>
+						Damage : <b>'.$child->Projectile->Damage.'</b><br>
+						Speed : <b>'.$child->Projectile->Speed.'</b><br>';
+						break;
+					
+					} 
+				}
+			}
+
+			if (!$exi) { self::AlertError('Unknown monster name !'); }
 		}
 
 		public static function serverMonsters() {
@@ -193,8 +223,11 @@
 							$hp = $child->MaxHitPoints;
 
 						}
+
+						$linkname = str_replace(" ", "",$child->attributes()->id);
+						$linkor = strtolower($linkname);
 				  	
-				  		echo '<tr><td>'.$child->attributes()->id.'</td><td>'.$hp.'</td><td>'.$defense.'</td><td>'.$terrain.'</td></tr>';
+				  		echo '<tr><td><a href="seemonster.php?name='.$child->attributes()->id.'">'.$child->attributes()->id.'</a></td><td>'.$hp.'</td><td>'.$defense.'</td><td>'.$terrain.'</td></tr>';
 
 				  	}
 
@@ -216,34 +249,54 @@
 			}
 		}
 
+
+		public static function createItem($filename) {
+
+			header('Content-type: text/xml');
+			$xml = simplexml_load_file($filename);
+
+			echo $xml->asXML();
+
+		}
+
 		public static function getCategories() {
 
-			$categories = Database::$db->prepare('SELECT * FROM `forum` ORDER BY `id` DESC');
+			$categories = Database::$db->prepare('SELECT * FROM `forum` ORDER BY `id`');
 
 			if ($categories->execute()) {
 
 				$category = $categories->fetchAll(PDO::FETCH_ASSOC);
-				echo '<br><table class="table-striped" width="100%">';
 
 				foreach ($category as $display) {
 
-					echo '<tr><td><b><a href="forumsee.php?id='.$display['id'].'">'.$display['title'].'</a></b><br>'.$display['desc'].'</td><td width="15%">Posts : <b>1999</b></td></tr>';
+					$getposts = Database::$db->prepare('SELECT COUNT(*) AS `POSTS` FROM `category_topic` WHERE `forum_id` =:id');
+					$getposts->bindParam(':id',$display['id'],PDO::PARAM_INT);
 
+					if ($getposts->execute()) {
+
+						$post = $getposts->fetch(PDO::FETCH_ASSOC);
+
+						echo '<br><table class="table-striped" width="100%"><tr><td><b><a href="forumsee.php?id='.$display['id'].'">'.$display['title'].'</a></b><br>'.$display['desc'].'</td><td width="15%">Posts : <b>'.$post['POSTS'].'</b></td></tr></table>';
+					
+					}
 				}
-
-				echo '</table>';
 			}
 		}
 
 		public static function getTopics($id) {
 
-			$getopics = Database::$db->prepare('SELECT * FROM `category_topic` WHERE `id` = :id');
+			$getopics = Database::$db->prepare('SELECT * FROM `category_topic` WHERE `forum_id` = :id');
 			$getopics->bindParam(':id',$id,PDO::PARAM_INT);
 
 			if ($getopics->execute()) {
 
 				$topics = $getopics->fetchAll(PDO::FETCH_ASSOC);
 
+				foreach ($topics as $display) {
+
+					echo '<br><table class="table-striped" width="100%"><tr><td><a href="topic.php?id='.$display['id'].'"><b>'.$display['title'].'</b></a><br>Started by : '.$display['owner'].' at '.$display['added'].'</td><td width="15%"><td>Replies : <b>99</b></td></tr></table>';
+
+				}
 			}
 		}
 

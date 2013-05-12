@@ -53,6 +53,7 @@ include ('/engine/functions.php');
                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li><a tabindex="-1" href="topfame.php">Top fame</a></li>
                         <li><a tabindex="-1" href="deaths.php">Lastest deaths</a></li>
+                        <li><a tabindex="-1" href="forum.php">Forum</a></li>
                       </ul>
                   </li>  
                   <li class="dropdown">

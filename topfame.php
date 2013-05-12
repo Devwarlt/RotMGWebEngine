@@ -2,7 +2,7 @@
 
 include ('/layout/header.php');
 
-
+echo '<legend>Fame highscores</legend>';
 Display::topFame();
 
 

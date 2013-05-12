@@ -17,5 +17,6 @@ $connect['database'] = "rotmg"; // MySQL database name
 $config['server_website'] = 'http://www.myserver.com'; // To make news links works http:// must be included
 $config['forum_news_category'] = 1; // This is used to auto add news into the forum news section ! just add the ID of the NEWS category
 $config['item_directory'] = 'C:\Users\Asus\Desktop\New folder\db\data/'; // Path to your server item data
+$config['item_file'] = 'C:\Users\Asus\Desktop\New folder\db\data/addition.xml';
 
 ?>

@@ -7,7 +7,7 @@ Check::checkAdminStatus($_SESSION['user']);
 echo '<form action="" method="POST">
 <input type="text" name="title" placeholder="News title"><br>
 <input type="text" name="desc" placeholder="News short description"><br>
-<textarea name="text"> News body ( feel free to use tags ) </textarea><br>
+<textarea name="text" class="redactor"> News body ( feel free to use tags ) </textarea><br>
 <button type="submit" value="submit" name="submit" class="btn btn-primary">Submit<i class="icon-ok icon-white"></i></button>
 </form>';
 
