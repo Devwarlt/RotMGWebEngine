@@ -325,6 +325,29 @@
 			}
 		}
 
+		public static function onlinePlayers() {
+
+			$count = Database::$db->prepare('SELECT COUNT(*) as `TOTAL` FROM `characters` WHERE `online` = 1');
+
+			if ($count->execute()) {
+
+				$online = $count->fetch();
+
+				if ($online['TOTAL'] == 0) {
+
+					$number = 'Nobody is online';
+
+				} else {
+
+					$number = $online['TOTAL'];
+
+				}
+
+				echo $number;
+
+			}
+		}
+
 		public static function getAllNews() {
 
 			$getinfo = Database::$db->prepare('SELECT * FROM `news` ORDER BY `id` DESC');
@@ -554,10 +577,58 @@
 
 			if ($_SESSION['loged'] == 0) {
 
-				header("Location: /login.php");
+				header("Location: /login.php?error=loginfirst");
 
 			}
 
+		}
+	}
+
+	Class Account {
+
+		public $info;
+
+		public function __construct($id) {
+
+			$getinfo = Database::$db->prepare('SELECT * FROM `accounts` WHERE `id` = :id');
+			$getinfo->bindParam(':id',$id,PDO::PARAM_INT);
+
+			if ($getinfo->execute()) {
+
+				$this->info = $getinfo->fetch(PDO::FETCH_ASSOC);
+
+			}
+		}
+
+		public function accountId() {
+
+			$id = $this->info['id'];
+			return $id;
+
+		}
+
+		public function accountEmail() {
+
+			$email = $this->info['uuid'];
+			return $email;
+		}
+
+		public function accountName() {
+
+			$name = $this->info['name'];
+			return $name;
+		}
+
+		public function accountPassword() {
+
+			$password = $this->info['password'];
+			return $password;
+		}
+
+		public function accountRegTime() {
+
+			$time = $this->info['regTime'];
+			return $time;
 		}
 	}
 

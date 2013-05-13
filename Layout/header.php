@@ -19,9 +19,9 @@ include ('/engine/functions.php');
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $('.dropdown-toggle').dropdown();
-            $('#redactor').redactor();
-            $(".alert").alert();
+            //$('.dropdown-toggle').dropdown();
+            $('.redactor').redactor();
+            //$(".alert").alert();
         });
   </script>
 
@@ -71,8 +71,9 @@ include ('/engine/functions.php');
 
     <div id="MainDiv">
       <div class="page-header">
-      <h1><?PHP echo $config['server_name']; ?> <small><?PHP echo $config['server_desc']; ?></small></h1>
+      
     </div>
       <div id="SecondDiv">
+        <div class="well"><h2><?PHP echo $config['server_name']; ?> <small><?PHP echo $config['server_desc']; ?></small></h2><br />Online players : <b><?PHP Display::onlinePlayers(); ?></b></div>
         <div class="well">
 

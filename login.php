@@ -3,7 +3,7 @@
 include ('/layout/header.php');
 check::CheckLog();
 echo '
-<form action="" method="POST">
+<form action="login.php" method="POST">
   <fieldset>
     <legend>Login to '.$config['server_name'].'</legend>
     <input type="text" placeholder="Email" name="email"><br>
@@ -11,6 +11,12 @@ echo '
     <button type="submit" value="submit" name="submit" class="btn btn-primary">Submit <i class="icon-ok icon-white"></i></button>
   </fieldset>
 </form>';
+
+if ($_GET['error'] == 'loginfirst') {
+
+	Display::AlertError('Please log in first !');
+
+}
 
 if (isset($_POST['submit'])) {
 
