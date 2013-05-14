@@ -101,7 +101,7 @@
 				Desc : <input type="text" name="desc" value="'.$info['text'].'"><br>
 				<textarea id="redactor" name="fulltext">'.$info['fulltext'].'</textarea><br><button type="submit" value="submit" name="submit" class="btn btn-primary">Submit <i class="icon-ok icon-white"></i></button><br><form><br>';
 
-				if ($_POST['submit']) {
+				if (isset($_POST['submit'])) {
 
 					$title = $_POST['title'];
 					$desc = $_POST['desc'];
