@@ -1,0 +1,532 @@
+Item name : Staff of Someone | Item ID : 3840
+Item name : Yolo | Item ID : 3847
+Item name : Robe of Someone | Item ID : 3841
+Item name : Star of Invincible | Item ID : 3842
+Item name : Kitty | Item ID : 3843
+Item name : Potion of Maxy | Item ID : 3844
+Item name : Amulet of Someone | Item ID : 3845
+Item name : Dreamscape Labyrinth Key | Item ID : 3846
+Item name : Scepter of Derping | Item ID : 3120
+Item name : Banana Key | Item ID : 9023
+Item name : Grand Zeta Key | Item ID : 9035
+Item name : Souleater Skull | Item ID : 3878
+Item name : Mobstopper Trap | Item ID : 3879
+Item name : Cloak of Hidden Identity | Item ID : 3880
+Item name : Bloodorc Quiver | Item ID : 3881
+Item name : Space Deterioration Spell | Item ID : 3882
+Item name : Tome of the Fountains | Item ID : 3883
+Item name : Helm of the Holy Warrior | Item ID : 3884
+Item name : Magma Shield | Item ID : 3885
+Item name : 1940s Orb | Item ID : 3886
+Item name : Poison of Obsidian | Item ID : 3887
+Item name : Seal of Mass Power | Item ID : 3888
+Item name : Prism of the Soul Stealer | Item ID : 3889
+Item name : Scepter of the Grand Sorcerer | Item ID : 3890
+Item name : Skull of the Undead King | Item ID : 3860
+Item name : Azure Trap | Item ID : 3861
+Item name : Cloak of Altered Presence | Item ID : 3862
+Item name : Quiver of Artemis | Item ID : 3863
+Item name : Spell of the Eternal Void | Item ID : 3864
+Item name : Tome of the Ancients | Item ID : 3865
+Item name : Helm of the Leviathan General | Item ID : 3866
+Item name : Shield of Death | Item ID : 3867
+Item name : Fury Orb | Item ID : 3868
+Item name : Bile Poison | Item ID : 3869
+Item name : Seal of War | Item ID : 3870
+Item name : Prism of the Bloody Surprise | Item ID : 3871
+Item name : Scepter of Vorv | Item ID : 3872
+Item name : Staff of Someone | Item ID : 3840
+Item name : Robe of Someone | Item ID : 3841
+Item name : Star of Invincible | Item ID : 3842
+Item name : Useless  Kitty | Item ID : 3843
+Item name : Potion of Maxy | Item ID : 3844
+Item name : Regals Wumme | Item ID : 3845
+Item name : God Rushing | Item ID : 3846
+Item name : Dreamscape Labyrinth Key | Item ID : 3847
+Item name : Rainbow Bow | Item ID : 4000
+Item name : Ninjaspell | Item ID : 4001
+Item name : Blade of Obsidian | Item ID : 3177
+Item name : Armor of Obsidian | Item ID : 3184
+Item name : Shield of Obsidian | Item ID : 3185
+Item name : Ring of Obsidian | Item ID : 3186
+Item name : Staff of Obsidian | Item ID : 3187
+Item name : Bow of Ruby | Item ID : 3188
+Item name : Quiver of Ruby | Item ID : 3189
+Item name : Armor of Ruby | Item ID : 3190
+Item name : Ring of Ruby | Item ID : 3191
+Item name : Wand of Sapphire | Item ID : 3192
+Item name : Tome of Sapphire | Item ID : 3193
+Item name : Robe of Sapphire | Item ID : 3200
+Item name : Ring of Sapphire | Item ID : 3201
+Item name : Dagger of Void | Item ID : 3202
+Item name : Cloak of Void | Item ID : 3203
+Item name : Armor of Void | Item ID : 3204
+Item name : Ring of Void | Item ID : 3205
+Item name : Mithril Sword | Item ID : 3206
+Item name : Kablem Dildo Dye | Item ID : 3207
+Item name : Cloak of the Tutorial | Item ID : 3208
+Item name : Black Cat Generator | Item ID : 5376
+Item name : Grey Cat Generator | Item ID : 5377
+Item name : Orange Cat Generator | Item ID : 5378
+Item name : Tan Cat Generator | Item ID : 5379
+Item name : Yellow Cat Generator | Item ID : 5380
+Item name : Brown Pup Generator | Item ID : 5381
+Item name : Grey Pup Generator | Item ID : 5382
+Item name : Golden Pup Generator | Item ID : 5383
+Item name : White Cat Generator | Item ID : 5384
+Item name : Blue Snail Generator | Item ID : 5385
+Item name : Grey Wolf Generator | Item ID : 5386
+Item name : Brown Fox Generator | Item ID : 5387
+Item name : Green Frog Generator | Item ID : 5388
+Item name : Lion Generator | Item ID : 5389
+Item name : Penguin Generator | Item ID : 5390
+Item name : Sheepdog Generator | Item ID : 5391
+Item name : Panda Generator | Item ID : 5392
+Item name : Purple Snail Generator | Item ID : 5393
+Item name : Black Wolf Generator | Item ID : 5394
+Item name : Grey Fox Generator | Item ID : 5395
+Item name : Purple Frog Generator | Item ID : 5396
+Item name : White Lion Generator | Item ID : 5397
+Item name : Green Penguin Generator | Item ID : 5398
+Item name : Golden Sheepdog Generator | Item ID : 5399
+Item name : Bluebird Generator | Item ID : 5400
+Item name : Chick Generator | Item ID : 5401
+Item name : Pig Generator | Item ID : 5402
+Item name : Sea Slurp Generator | Item ID : 5403
+Item name : Squirrel Generator | Item ID : 5404
+Item name : Bat Generator | Item ID : 5405
+Item name : Lil' Ghost Generator | Item ID : 5406
+Item name : Valentine Generator | Item ID : 5407
+Item name : Leprechaun Generator | Item ID : 5408
+Item name : Lil' Oryx Generator | Item ID : 5409
+Item name : Toucan Generator | Item ID : 5410
+Item name : Skunk Generator | Item ID : 5411
+Item name : Mallard Generator | Item ID : 5412
+Item name : Duck Generator | Item ID : 5413
+Item name : Eagle Generator | Item ID : 5414
+Item name : Turtle Generator | Item ID : 5415
+Item name : Jelly Generator | Item ID : 5416
+Item name : Bee Generator | Item ID : 5417
+Item name : Raven Generator | Item ID : 5418
+Item name : Purple Penguin Generator | Item ID : 5419
+Item name : Grass Penguin Generator | Item ID : 5420
+Item name : Elf Generator | Item ID : 5421
+Item name : Crab Generator | Item ID : 5422
+Item name : Hamster Generator | Item ID : 5423
+Item name : Dino Generator | Item ID : 5424
+Item name : Elephant Generator | Item ID : 5425
+Item name : Demon Frog Generator | Item ID : 5426
+Item name : Gargoyle Generator | Item ID : 5427
+Item name : Gummy Bear Generator | Item ID : 5428
+Item name : Dragonfly Generator | Item ID : 5429
+Item name : Lil' Cyclops Generator | Item ID : 5430
+Item name : Snowy Owl Generator | Item ID : 5431
+Item name : Turkey Generator | Item ID : 5432
+Item name : Baby Generator | Item ID : 5433
+Item name : Baby Dragon Generator | Item ID : 5434
+Item name : Karate Penguin Red Generator | Item ID : 5435
+Item name : Karate Penguin Blue Generator | Item ID : 5436
+Item name : Karate Penguin Yellow Generator | Item ID : 5437
+Item name : Karate Penguin Purple Generator | Item ID : 5438
+Item name : Beach Ball Generator | Item ID : 5439
+Item name : Robobuddy Generator | Item ID : 5440
+Item name : Snowman Generator | Item ID : 5441
+Item name : Strike Amulet | Item ID : 2786
+Item name : Short Sword | Item ID : 2560
+Item name : Broad Sword | Item ID : 2668
+Item name : Saber | Item ID : 2669
+Item name : Long Sword | Item ID : 2561
+Item name : Falchion | Item ID : 2670
+Item name : Fire Sword | Item ID : 2619
+Item name : Glass Sword | Item ID : 2620
+Item name : Golden Sword | Item ID : 2562
+Item name : Ravenheart Sword | Item ID : 2690
+Item name : Dragonsoul Sword | Item ID : 2691
+Item name : Archon Sword | Item ID : 2692
+Item name : Skysplitter Sword | Item ID : 2631
+Item name : Sword of Acclaim | Item ID : 2827
+Item name : Sword of Splendor | Item ID : 2804
+Item name : Sword of Majesty | Item ID : 2805
+Item name : Crystal Sword | Item ID : 2563
+Item name : Demon Blade | Item ID : 3073
+Item name : Ancient Stone Sword | Item ID : 3077
+Item name : Fire Wand | Item ID : 2564
+Item name : Force Wand | Item ID : 2671
+Item name : Power Wand | Item ID : 2672
+Item name : Missile Wand | Item ID : 2565
+Item name : Eldritch Wand | Item ID : 2673
+Item name : Hell's Fire Wand | Item ID : 2566
+Item name : Wand of Dark Magic | Item ID : 2621
+Item name : Wand of Arcane Flame | Item ID : 2784
+Item name : Sprite Wand | Item ID : 2635
+Item name : Wand of Death | Item ID : 2567
+Item name : Wand of Deep Sorcery | Item ID : 2693
+Item name : Wand of Shadow | Item ID : 2694
+Item name : Wand of Ancient Warning | Item ID : 2695
+Item name : Wand of Recompense | Item ID : 2806
+Item name : Wand of Evocation | Item ID : 2807
+Item name : Wand of Retribution | Item ID : 2808
+Item name : Crystal Wand | Item ID : 2879
+Item name : Wand of the Bulwark | Item ID : 3076
+Item name : Wooden Shield | Item ID : 2568
+Item name : Iron Shield | Item ID : 2569
+Item name : Steel Shield | Item ID : 2570
+Item name : Reinforced Shield | Item ID : 2767
+Item name : Golden Shield | Item ID : 2571
+Item name : Mithril Shield | Item ID : 2572
+Item name : Colossus Shield | Item ID : 2850
+Item name : Snake Skin Shield | Item ID : 2624
+Item name : Shield of Ogmur | Item ID : 3087
+Item name : Wolfskin Armor | Item ID : 2680
+Item name : Leather Armor | Item ID : 2573
+Item name : Basilisk Hide Armor | Item ID : 2681
+Item name : Minotaur Hide Armor | Item ID : 2682
+Item name : Bearskin Armor | Item ID : 2768
+Item name : Chimera Hide Armor | Item ID : 2769
+Item name : Wyvern Skin Armor | Item ID : 2770
+Item name : Studded Leather Armor | Item ID : 2574
+Item name : Snake Skin Armor | Item ID : 2622
+Item name : Drake Hide Armor | Item ID : 2771
+Item name : Roc Leather Armor | Item ID : 2702
+Item name : Hippogriff Hide Armor | Item ID : 2703
+Item name : Griffon Hide Armor | Item ID : 2704
+Item name : Hydra Skin Armor | Item ID : 2809
+Item name : Wyrmhide Armor | Item ID : 2810
+Item name : Leviathan Armor | Item ID : 2811
+Item name : Iron Mail | Item ID : 2683
+Item name : Chainmail | Item ID : 2575
+Item name : Blue Steel Mail | Item ID : 2684
+Item name : Silver Chainmail | Item ID : 2685
+Item name : Golden Chainmail | Item ID : 2576
+Item name : Plate Mail | Item ID : 2577
+Item name : Mithril Chainmail | Item ID : 2783
+Item name : Mithril Armor | Item ID : 2578
+Item name : Dragonscale Armor | Item ID : 2579
+Item name : Desolation Armor | Item ID : 2705
+Item name : Vengeance Armor | Item ID : 2706
+Item name : Abyssal Armor | Item ID : 2707
+Item name : Acropolis Armor | Item ID : 2812
+Item name : Dominion Armor | Item ID : 2813
+Item name : Annihilation Armor | Item ID : 2814
+Item name : Steel Dagger | Item ID : 2580
+Item name : Dirk | Item ID : 2581
+Item name : Blue Steel Dagger | Item ID : 2674
+Item name : Dusky Rose Dagger | Item ID : 2675
+Item name : Silver Dagger | Item ID : 2676
+Item name : Golden Dagger | Item ID : 2582
+Item name : Obsidian Dagger | Item ID : 2583
+Item name : Poison Fang Dagger | Item ID : 1801
+Item name : Mithril Dagger | Item ID : 2584
+Item name : Fire Dagger | Item ID : 2585
+Item name : Ragetalon Dagger | Item ID : 2696
+Item name : Emeraldshard Dagger | Item ID : 2697
+Item name : Agateclaw Dagger | Item ID : 2698
+Item name : Dagger of Foul Malevolence | Item ID : 2815
+Item name : Dagger of Sinister Deeds | Item ID : 2816
+Item name : Dagger of Dire Hatred | Item ID : 2817
+Item name : Dirk of Cronus | Item ID : 3082
+Item name : Shortbow | Item ID : 2586
+Item name : Reinforced Bow | Item ID : 2677
+Item name : Crossbow | Item ID : 2587
+Item name : Greywood Bow | Item ID : 2678
+Item name : Ironwood Bow | Item ID : 2679
+Item name : Fire Bow | Item ID : 2588
+Item name : Double Bow | Item ID : 2589
+Item name : Heavy Crossbow | Item ID : 2618
+Item name : Golden Bow | Item ID : 2590
+Item name : Verdant Bow | Item ID : 2699
+Item name : Bow of Fey Magic | Item ID : 2700
+Item name : Bow of Innocent Blood | Item ID : 2701
+Item name : Bow of Covert Havens | Item ID : 2818
+Item name : Bow of Mystical Energy | Item ID : 2819
+Item name : Bow of Deep Enchantment | Item ID : 2820
+Item name : Doom Bow | Item ID : 3074
+Item name : Coral Bow | Item ID : 3088
+Item name : Potion of Attack | Item ID : 2591
+Item name : Potion of Defense | Item ID : 2592
+Item name : Potion of Speed | Item ID : 2593
+Item name : Potion of Vitality | Item ID : 2612
+Item name : Potion of Wisdom | Item ID : 2613
+Item name : Potion of Dexterity | Item ID : 2636
+Item name : Potion of Life | Item ID : 2793
+Item name : Potion of Mana | Item ID : 2794
+Item name : Minor Health Potion | Item ID : 2736
+Item name : Minor Magic Potion | Item ID : 2781
+Item name : Health Potion | Item ID : 2594
+Item name : Magic Potion | Item ID : 2595
+Item name : Fire Water | Item ID : 2868
+Item name : Cream Spirit | Item ID : 2869
+Item name : Chardonnay | Item ID : 2870
+Item name : Melon Liqueur | Item ID : 2871
+Item name : Cabernet | Item ID : 2872
+Item name : Vintage Port | Item ID : 2873
+Item name : Sauvignon Blanc | Item ID : 2874
+Item name : Muscat | Item ID : 2875
+Item name : Rice Wine | Item ID : 2876
+Item name : Shiraz | Item ID : 2877
+Item name : Elixir of Health 7 | Item ID : 2836
+Item name : Elixir of Health 6 | Item ID : 2837
+Item name : Elixir of Health 5 | Item ID : 2838
+Item name : Elixir of Health 4 | Item ID : 2839
+Item name : Elixir of Health 3 | Item ID : 2689
+Item name : Elixir of Health 2 | Item ID : 2632
+Item name : Elixir of Health 1 | Item ID : 2633
+Item name : Elixir of Magic 7 | Item ID : 2840
+Item name : Elixir of Magic 6 | Item ID : 2841
+Item name : Elixir of Magic 5 | Item ID : 2842
+Item name : Elixir of Magic 4 | Item ID : 2843
+Item name : Elixir of Magic 3 | Item ID : 2634
+Item name : Elixir of Magic 2 | Item ID : 2797
+Item name : Elixir of Magic 1 | Item ID : 2798
+Item name : Snake Oil | Item ID : 2623
+Item name : Healing Ichor | Item ID : 1799
+Item name : Greater Health Potion | Item ID : 2795
+Item name : Greater Magic Potion | Item ID : 2796
+Item name : Tincture of Dexterity | Item ID : 2828
+Item name : Tincture of Life | Item ID : 2829
+Item name : Tincture of Mana | Item ID : 2830
+Item name : Tincture of Defense | Item ID : 2831
+Item name : Effusion of Dexterity | Item ID : 2832
+Item name : Effusion of Life | Item ID : 2833
+Item name : Effusion of Mana | Item ID : 2834
+Item name : Effusion of Defense | Item ID : 2835
+Item name : Snake Eye Ring | Item ID : 2625
+Item name : Spider's Eye Ring | Item ID : 1800
+Item name : Ring of Minor Defense | Item ID : 2639
+Item name : Ring of Attack | Item ID : 2596
+Item name : Ring of Defense | Item ID : 2597
+Item name : Ring of Speed | Item ID : 2598
+Item name : Ring of Vitality | Item ID : 2614
+Item name : Ring of Wisdom | Item ID : 2615
+Item name : Ring of Dexterity | Item ID : 2637
+Item name : Ring of Health | Item ID : 2599
+Item name : Ring of Magic | Item ID : 2600
+Item name : Ring of Greater Attack | Item ID : 2601
+Item name : Ring of Greater Defense | Item ID : 2602
+Item name : Ring of Greater Speed | Item ID : 2603
+Item name : Ring of Greater Vitality | Item ID : 2616
+Item name : Ring of Greater Wisdom | Item ID : 2617
+Item name : Ring of Greater Dexterity | Item ID : 2638
+Item name : Ring of Greater Health | Item ID : 2604
+Item name : Ring of Greater Magic | Item ID : 2605
+Item name : Ring of Superior Attack | Item ID : 2743
+Item name : Ring of Superior Defense | Item ID : 2744
+Item name : Ring of Superior Speed | Item ID : 2745
+Item name : Ring of Superior Vitality | Item ID : 2746
+Item name : Ring of Superior Wisdom | Item ID : 2747
+Item name : Ring of Superior Dexterity | Item ID : 2748
+Item name : Ring of Superior Health | Item ID : 2749
+Item name : Ring of Superior Magic | Item ID : 2750
+Item name : Ring of Paramount Attack | Item ID : 2751
+Item name : Ring of Paramount Defense | Item ID : 2752
+Item name : Ring of Paramount Speed | Item ID : 2753
+Item name : Ring of Paramount Vitality | Item ID : 2754
+Item name : Ring of Paramount Wisdom | Item ID : 2755
+Item name : Ring of Paramount Dexterity | Item ID : 2756
+Item name : Ring of Paramount Health | Item ID : 2757
+Item name : Ring of Paramount Magic | Item ID : 2758
+Item name : Ring of Exalted Attack | Item ID : 2759
+Item name : Ring of Exalted Defense | Item ID : 2760
+Item name : Ring of Exalted Speed | Item ID : 2761
+Item name : Ring of Exalted Vitality | Item ID : 2762
+Item name : Ring of Exalted Wisdom | Item ID : 2763
+Item name : Ring of Exalted Dexterity | Item ID : 2764
+Item name : Ring of Exalted Health | Item ID : 2765
+Item name : Ring of Exalted Magic | Item ID : 2766
+Item name : Ring of the Sphinx | Item ID : 2976
+Item name : Ring of the Nile | Item ID : 2977
+Item name : Ring of the Pyramid | Item ID : 2978
+Item name : Fire Spray Spell | Item ID : 2606
+Item name : Flame Burst Spell | Item ID : 2772
+Item name : Fire Nova Spell | Item ID : 2607
+Item name : Scorching Blast Spell | Item ID : 2773
+Item name : Destruction Sphere Spell | Item ID : 2774
+Item name : Magic Nova Spell | Item ID : 2608
+Item name : Elemental Detonation Spell | Item ID : 2852
+Item name : Penetrating Blast Spell | Item ID : 3084
+Item name : Healing Tome | Item ID : 2609
+Item name : Remedy Tome | Item ID : 2775
+Item name : Spirit Salve Tome | Item ID : 2610
+Item name : Tome of Rejuvenation | Item ID : 2776
+Item name : Tome of Renewing | Item ID : 2611
+Item name : Tome of Divine Favor | Item ID : 2651
+Item name : Tome of Holy Guidance | Item ID : 2853
+Item name : Pirate Rum | Item ID : 2640
+Item name : Magic Mushroom | Item ID : 2641
+Item name : Seal of the Initiate | Item ID : 2642
+Item name : Seal of the Pilgrim | Item ID : 2777
+Item name : Seal of the Seeker | Item ID : 2643
+Item name : Seal of the Aspirant | Item ID : 2778
+Item name : Seal of the Divine | Item ID : 2644
+Item name : Seal of the Holy Warrior | Item ID : 2645
+Item name : Seal of the Blessed Champion | Item ID : 2854
+Item name : Seal of Blasphemous Prayer | Item ID : 3078
+Item name : Cloak of Shadows | Item ID : 2646
+Item name : Cloak of Darkness | Item ID : 2647
+Item name : Cloak of Speed | Item ID : 2648
+Item name : Cloak of the Night Thief | Item ID : 2779
+Item name : Cloak of the Red Agent | Item ID : 2649
+Item name : Cloak of Endless Twilight | Item ID : 2785
+Item name : Cloak of Ghostly Concealment | Item ID : 2855
+Item name : Cloak of the Planewalker | Item ID : 2650
+Item name : Robe of the Neophyte | Item ID : 2652
+Item name : Robe of the Apprentice | Item ID : 2686
+Item name : Robe of the Acolyte | Item ID : 2653
+Item name : Robe of the Student | Item ID : 2687
+Item name : Robe of the Conjurer | Item ID : 2688
+Item name : Robe of the Adept | Item ID : 2654
+Item name : Robe of the Invoker | Item ID : 2655
+Item name : Robe of the Illusionist | Item ID : 2780
+Item name : Robe of the Master | Item ID : 2656
+Item name : Robe of the Shadow Magus | Item ID : 2708
+Item name : Robe of the Moon Wizard | Item ID : 2709
+Item name : Robe of the Elder Warlock | Item ID : 2710
+Item name : Robe of the Grand Sorcerer | Item ID : 2821
+Item name : Robe of the Star Mother | Item ID : 2822
+Item name : Robe of the Ancient Intellect | Item ID : 2823
+Item name : Magic Quiver | Item ID : 2657
+Item name : Reinforced Quiver | Item ID : 2658
+Item name : Iron Quiver | Item ID : 2659
+Item name : Elvencraft Quiver | Item ID : 2782
+Item name : Magesteel Quiver | Item ID : 2660
+Item name : Golden Quiver | Item ID : 2661
+Item name : Quiver of Elvish Mastery | Item ID : 2856
+Item name : Quiver of Thunder | Item ID : 3079
+Item name : Combat Helm | Item ID : 2662
+Item name : Bronze Helm | Item ID : 2663
+Item name : Black Iron Helm | Item ID : 2664
+Item name : Red Iron Helm | Item ID : 2665
+Item name : Steel Helm | Item ID : 2666
+Item name : Golden Helm | Item ID : 2667
+Item name : Helm of the Great General | Item ID : 2857
+Item name : Helm of the Juggernaut | Item ID : 3080
+Item name : Energy Staff | Item ID : 2711
+Item name : Firebrand Staff | Item ID : 2712
+Item name : Comet Staff | Item ID : 2713
+Item name : Serpentine Staff | Item ID : 2714
+Item name : Meteor Staff | Item ID : 2715
+Item name : Slayer Staff | Item ID : 2716
+Item name : Avenger Staff | Item ID : 2717
+Item name : Staff of Destruction | Item ID : 2718
+Item name : Staff of Horror | Item ID : 2719
+Item name : Staff of Necrotic Arcana | Item ID : 2720
+Item name : Staff of Diabolic Secrets | Item ID : 2721
+Item name : Staff of Astral Knowledge | Item ID : 2722
+Item name : Staff of the Cosmic Whole | Item ID : 2824
+Item name : Staff of the Vital Unity | Item ID : 2825
+Item name : Staff of the Fundamental Core | Item ID : 2826
+Item name : Staff of Extreme Prejudice | Item ID : 3075
+Item name : Centipede Poison | Item ID : 2723
+Item name : Spider Venom | Item ID : 2724
+Item name : Pit Viper Poison | Item ID : 2725
+Item name : Stingray Poison | Item ID : 2726
+Item name : Felwasp Toxin | Item ID : 2727
+Item name : Nightwing Venom | Item ID : 2728
+Item name : Baneserpent Poison | Item ID : 2858
+Item name : Necrotic Skull | Item ID : 2730
+Item name : Breathtaker Skull | Item ID : 2731
+Item name : Heartstealer Skull | Item ID : 2732
+Item name : Soul Siphon Skull | Item ID : 2733
+Item name : Essence Tap Skull | Item ID : 2734
+Item name : Lifedrinker Skull | Item ID : 2735
+Item name : Bloodsucker Skull | Item ID : 2859
+Item name : Skull of Endless Torment | Item ID : 3086
+Item name : Hunting Trap | Item ID : 2737
+Item name : Wilderlands Trap | Item ID : 2738
+Item name : Deepforest Trap | Item ID : 2739
+Item name : Savage Trap | Item ID : 2740
+Item name : Demonhunter Trap | Item ID : 2741
+Item name : Dragonstalker Trap | Item ID : 2742
+Item name : Giantcatcher Trap | Item ID : 2860
+Item name : Stasis Orb | Item ID : 2788
+Item name : Suspension Orb | Item ID : 2626
+Item name : Imprisonment Orb | Item ID : 2627
+Item name : Neutralization Orb | Item ID : 2628
+Item name : Timelock Orb | Item ID : 2629
+Item name : Banishment Orb | Item ID : 2630
+Item name : Planefetter Orb | Item ID : 2861
+Item name : Orb of Conflict | Item ID : 3083
+Item name : Purple Drake Egg | Item ID : 2729
+Item name : White Drake Egg | Item ID : 2799
+Item name : Blue Drake Egg | Item ID : 2800
+Item name : Orange Drake Egg | Item ID : 2801
+Item name : Green Drake Egg | Item ID : 2802
+Item name : Yellow Drake Egg | Item ID : 2803
+Item name : Decoy Prism | Item ID : 2787
+Item name : Deception Prism | Item ID : 2844
+Item name : Illusion Prism | Item ID : 2845
+Item name : Hallucination Prism | Item ID : 2846
+Item name : Prism of Figments | Item ID : 2847
+Item name : Prism of Phantoms | Item ID : 2848
+Item name : Prism of Apparitions | Item ID : 2851
+Item name : Prism of Dancing Swords | Item ID : 3085
+Item name : Chicken Leg of Doom | Item ID : 2849
+Item name : Lightning Scepter | Item ID : 2789
+Item name : Discharge Scepter | Item ID : 2862
+Item name : Thunderclap Scepter | Item ID : 2863
+Item name : Arcblast Scepter | Item ID : 2864
+Item name : Cloudflash Scepter | Item ID : 2865
+Item name : Scepter of Skybolts | Item ID : 2866
+Item name : Scepter of Storms | Item ID : 2867
+Item name : Amulet of Resurrection | Item ID : 2878
+Item name : Admin Sword | Item ID : 2880
+Item name : Undead Lair Key | Item ID : 1793
+Item name : Pirate Cave Key | Item ID : 1797
+Item name : Spider Den Key | Item ID : 1798
+Item name : Abyss of Demons Key | Item ID : 1802
+Item name : Snake Pit Key | Item ID : 1803
+Item name : Tomb of the Ancients Key | Item ID : 1808
+Item name : Sprite World Key | Item ID : 1823
+Item name : Wine Cellar Incantation | Item ID : 1826
+Item name : Ocean Trench Key | Item ID : 3089
+Item name : Coral Juice | Item ID : 3090
+Item name : Coral Ring | Item ID : 3091
+Item name : Robe of the Tlatoani | Item ID : 3092
+Item name : Staff of the Crystal Serpent | Item ID : 3093
+Item name : Cracked Crystal Skull | Item ID : 3094
+Item name : Crystal Bone Ring | Item ID : 3095
+Item name : Coral Silk Armor | Item ID : 3096
+Item name : Totem Key | Item ID : 3097
+Item name : Pollen Powder | Item ID : 3098
+Item name : Thousand Shot | Item ID : 3099
+Item name : Coral Venom Trap | Item ID : 3100
+Item name : St. Abraham's Wand | Item ID : 3101
+Item name : Tome of Holy Protection | Item ID : 3102
+Item name : Tome of Purification | Item ID : 3081
+Item name : Chasuble of Holy Light | Item ID : 3103
+Item name : Ring of Divine Faith | Item ID : 3104
+Item name : Holy Water | Item ID : 3105
+Item name : Bone Dagger | Item ID : 3106
+Item name : Manor Key | Item ID : 3107
+Item name : Anatis Staff | Item ID : 3108
+Item name : Ghost Pirate Rum | Item ID : 3109
+Item name : Crown | Item ID : 3110
+Item name : Captain's Ring | Item ID : 3111
+Item name : Spectral Cloth Armor | Item ID : 3112
+Item name : Spirit Dagger | Item ID : 3113
+Item name : Ghostly Prism | Item ID : 3114
+Item name : Small Firecracker | Item ID : 3115
+Item name : Large Firecracker | Item ID : 3116
+Item name : America Ring | Item ID : 3117
+Item name : Davy's Key | Item ID : 3118
+Item name : Scepter of Fulmination | Item ID : 3120
+Item name : Experimental Ring | Item ID : 3121
+Item name : Robe of the Mad Scientist | Item ID : 3122
+Item name : Conducting Wand | Item ID : 3123
+Item name : Sand Pail 5 | Item ID : 3124
+Item name : Sand Pail 4 | Item ID : 3125
+Item name : Sand Pail 3 | Item ID : 3126
+Item name : Sand Pail 2 | Item ID : 3127
+Item name : Sand Pail 1 | Item ID : 3128
+Item name : Bahama Sunrise | Item ID : 3129
+Item name : Blue Paradise | Item ID : 3130
+Item name : Pink Passion Breeze | Item ID : 3131
+Item name : Lime Jungle Bay | Item ID : 3132
+Item name : Beachzone Key | Item ID : 3133
+Item name : Gold Medal | Item ID : 3134
+Item name : Silver Medal | Item ID : 3135
+Item name : Bronze Medal | Item ID : 3136
+Item name : Lab Key | Item ID : 3119
+Item name : Transformation Potion | Item ID : 3137
+Item name : XP Booster | Item ID : 3138
+Item name : XP Booster Test | Item ID : 313

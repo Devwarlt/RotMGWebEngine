@@ -1,5 +1,6 @@
 <?PHP
 session_Start();
+error_reporting(-1);
 include ('/config/config.php');
 include ('/engine/functions.php');
 ?>
@@ -36,7 +37,7 @@ include ('/engine/functions.php');
 
                   <?PHP
 
-                  if ($_SESSION['loged'] == 1) {
+                  if (isset($_SESSION['loged']) == 1) {
 
                     echo '<li><a href="/myaccount.php"><i class="icon-user icon-white"></i> <b>Account</b></a></li>';
 
@@ -53,7 +54,6 @@ include ('/engine/functions.php');
                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li><a tabindex="-1" href="topfame.php">Top fame</a></li>
                         <li><a tabindex="-1" href="deaths.php">Lastest deaths</a></li>
-                        <li><a tabindex="-1" href="forum.php">Forum</a></li>
                       </ul>
                   </li>  
                   <li class="dropdown">
@@ -74,6 +74,6 @@ include ('/engine/functions.php');
       
     </div>
       <div id="SecondDiv">
-        <div class="well"><h2><?PHP echo $config['server_name']; ?> <small><?PHP echo $config['server_desc']; ?></small></h2><br />Online players : <b><?PHP Display::onlinePlayers(); ?></b></div>
+        <div class="well"><h2><?PHP echo $config['server_name']; ?> <small><?PHP echo $config['server_desc']; ?></small></h2></div>
         <div class="well">
 

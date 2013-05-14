@@ -12,45 +12,46 @@ echo '
   </fieldset>
 </form>';
 
-if ($_GET['error'] == 'loginfirst') {
+if (isset($_GET['error']) == 'loginfirst') {
 
 	Display::AlertError('Please log in first !');
 
-}
+} else {
 
-if (isset($_POST['submit'])) {
+	if (isset($_POST['submit'])) {
 
-	$username = $_POST['email'];
-	$password = sha1($_POST['password']);
+		$username = $_POST['email'];
+		$password = sha1($_POST['password']);
 
-	if ($username && $password) {
+		if ($username && $password) {
 
-		if (check::CheckPassword($username,$password) == false) {
+			if (check::CheckPassword($username,$password) == false) {
 
-			$getname = Database::$db->prepare('SELECT `name` FROM `accounts` WHERE `uuid` = :uuid');
-			$getname->bindParam(':uuid',$username,PDO::PARAM_STR);
+				$getname = Database::$db->prepare('SELECT `name` FROM `accounts` WHERE `uuid` = :uuid');
+				$getname->bindParam(':uuid',$username,PDO::PARAM_STR);
 
-			if ($getname->execute()) {
+				if ($getname->execute()) {
 
-				$user = $getname->fetch(PDO::FETCH_ASSOC);
+					$user = $getname->fetch(PDO::FETCH_ASSOC);
 
-				$_SESSION['loged'] = 1;
-				$_SESSION['user'] = $user['name'];
-				header("Location: myaccount.php");
+					$_SESSION['loged'] = 1;
+					$_SESSION['user'] = $user['name'];
+					header("Location: myaccount.php");
+				}
+
+			} else {
+
+				Display::AlertError('Wrong login details ! ');
+
 			}
 
 		} else {
 
-			Display::AlertError('Wrong login details ! ');
+			Display::AlertError('Fill all fields ! ');
 
 		}
 
-	} else {
-
-		Display::AlertError('Fill all fields ! ');
-
 	}
-
 }
 
 include ('/layout/bot.php');

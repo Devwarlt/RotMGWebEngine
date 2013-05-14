@@ -133,7 +133,7 @@
 		public static function serverItems() {
 
 			include ('/config/config.php');
-			echo '<table class="table table-striped"><thead><tr><td><b>Name</b></td><td><b>Description</b></td></tr></thead>';	
+			echo '<table class="table table-striped"><thead><tr><td>ID</td><td><b>Name</b></td><td><b>Description</b></td></tr></thead>';
 			foreach (glob($config['item_directory']."*.xml") as $filename) {
 
 				$xml = simplexml_load_file($filename);
@@ -142,14 +142,16 @@
 
 					if ($child->Class == 'Equipment') {
 
-				  		echo '<tr><td>'.$child->attributes()->id.'</td><td>'.$child->Description.'</td><td>'.$child->MinDamage.'</td><td>'.$terrain.'</td></tr>';
+				  		echo '<tr><td>'.hexdec($child->attributes()->type).'</td><td>'.$child->attributes()->id.'</td><td>'.$child->Description.'</td></tr>';
 
 				  	}
 
 				}
+
+				
 		    }
 
-				echo '</table>';	  
+				echo '</table>';	      
 		}
 
 		public static function loadMonster($name) {
@@ -565,7 +567,7 @@
 
 		public static function checkLog() {
 
-			if ($_SESSION['loged'] == 1) {
+			if (isset($_SESSION['loged']) == 1) {
 
 				header("Location: /myaccount.php");
 
@@ -575,7 +577,7 @@
 
 		public static function checkNotLog() {
 
-			if ($_SESSION['loged'] == 0) {
+			if (isset($_SESSION['loged']) == 0) {
 
 				header("Location: /login.php?error=loginfirst");
 
