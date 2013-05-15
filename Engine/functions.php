@@ -36,7 +36,7 @@
 					if ($getcharinfo->execute()) {
 
 						$levels = $getcharinfo->fetch(PDO::FETCH_ASSOC);
-						echo '<tr><td>'.$display['name'].'</td><td>'.$levels['level'].'</td><td>'.$display['killer'].'</td><td>'.$display['time'].'</td></tr>';
+						echo '<tr><td>'.$display['name'].'</td><td>'.$levels['level'].'</td><td><a href="seemonster.php?name='.$display['killer'].'">'.$display['killer'].'</a></td><td>'.$display['time'].'</td></tr>';
 
 					}
 				}
@@ -504,7 +504,7 @@
 						$filename = 'attack.txt';
 						$handle = fopen($filename, 'a');
 						$informationattack = ' IP : '.$ip.' OVERLOADED LIMIT AT  '.date("Y-m-d H:i:s");
-						fwrite($handle, $informationattack."\n");
+						fwrite($handle, "\n".$informationattack."\n");
 						fclose($handle);
 
 					} else {
