@@ -133,7 +133,7 @@
 		public static function serverItems() {
 
 			include ('/config/config.php');
-			echo '<table class="table table-striped"><thead><tr><td>ID</td><td><b>Name</b></td><td><b>Description</b></td></tr></thead>';
+			echo '<table class="table table-striped"><thead><tr><td><b>ID</b></td><td><b>Name</b></td><td><b>Description</b></td></tr></thead>';
 			foreach (glob($config['item_directory']."*.xml") as $filename) {
 
 				$xml = simplexml_load_file($filename);
@@ -287,17 +287,56 @@
 
 		public static function getTopics($id) {
 
-			$getopics = Database::$db->prepare('SELECT * FROM `category_topic` WHERE `forum_id` = :id');
-			$getopics->bindParam(':id',$id,PDO::PARAM_INT);
+			$getopics = Database::$db->prepare('SELECT * FROM `category_topic` WHERE `forum_id` = :forum_id');
+			$getopics->bindParam(':forum_id',$id,PDO::PARAM_INT);
 
 			if ($getopics->execute()) {
 
-				$topics = $getopics->fetchAll(PDO::FETCH_ASSOC);
+				if ($getopics->rowCount() == 0) {
 
-				foreach ($topics as $display) {
+					self::AlertError('Invalid topic ID');
 
-					echo '<br><table class="table-striped" width="100%"><tr><td><a href="topic.php?id='.$display['id'].'"><b>'.$display['title'].'</b></a><br>Started by : '.$display['owner'].' at '.$display['added'].'</td><td width="15%"><td>Replies : <b>99</b></td></tr></table>';
+				} else {
 
+					$topics = $getopics->fetchAll(PDO::FETCH_ASSOC);
+
+					foreach ($topics as $display) {
+
+						$getreplies = Database::$db->prepare('SELECT COUNT(*) as `MAX` FROM `forum_post` WHERE `category_id` = :id');
+						$getreplies->bindParam(':id',$display['id'],PDO::PARAM_INT);
+
+						if ($getreplies->execute()) {
+
+							$reply = $getreplies->fetch(PDO::FETCH_ASSOC);
+
+							echo '<br><table class="table-striped" width="100%"><tr><td><a href="topic.php?id='.$display['id'].'"><b>'.$display['title'].'</b></a><br>Started by : '.$display['owner'].' at '.$display['added'].'</td><td width="15%"><td>Replies : <b>'.$reply['MAX'].'</b></td></tr></table>';
+						}
+					}
+				}
+			}
+		}
+
+		public static function getPost($id) {
+
+			$getposts = Database::$db->prepare('SELECT * FROM `forum_post` WHERE `category_id` = :id');
+			$getposts->bindParam(':id',$id,PDO::PARAM_INT);
+
+			if ($getposts->execute()) {
+
+				if ($getposts->rowCount() == 0) {
+
+					self::AlertError('Invalid post ID');
+
+				} else {
+
+					$posts = $getposts->fetchAll(PDO::FETCH_ASSOC);
+					foreach ($posts as $display) {
+
+						echo '<table class="table table-striped"><tr><thead><td>Posted by : <b>'.$display['owner'].'</b></td></thead></tr>';
+						echo '<tr><td>'.$display['text'].'</td></tr>';
+						echo '</table>';
+
+					}
 				}
 			}
 		}
@@ -428,6 +467,71 @@
 				if ($editlink->execute()) {
 
 
+				}
+			}
+		}
+	}
+
+	class Protect {
+
+		public static function protectPage() {
+
+			$ip = $_SERVER['REMOTE_ADDR'];
+			$insertip = Database::$db->prepare('SELECT * FROM `visitors` WHERE `ip` = :ip');
+			$insertip->bindParam(':ip',$ip,PDO::PARAM_STR);
+
+			if ($insertip->execute()) {
+
+				$ipp = $insertip->fetch(PDO::FETCH_ASSOC);
+				$current = strtotime(date("H:i:s"));
+
+				if ($ipp['time'] + 60 <= $current) {
+
+					$clearloig = Database::$db->prepare('DELETE FROM `visitors` WHERE `ip` = :ip'); 
+					$clearloig->bindParam(':ip',$ip,PDO::PARAM_STR);
+					$clearloig->execute();
+
+				}
+
+
+				if ($ipp['block'] >= 10) {
+
+					if  ($ipp['added'] != 1) {
+
+						$addattack =  Database::$db->prepare('UPDATE `visitors` SET `added` = 1 WHERE `ip` = :ip');
+						$addattack->bindParam(':ip',$ip,PDO::PARAM_STR);
+						$addattack->execute();
+						$filename = 'attack.txt';
+						$handle = fopen($filename, 'a');
+						$informationattack = ' IP : '.$ip.' OVERLOADED LIMIT AT  '.date("Y-m-d H:i:s");
+						fwrite($handle, $informationattack."\n");
+						fclose($handle);
+
+					} else {
+
+					die('LOAD LIMIT | WAIT 60 SECONDS !');
+
+					}
+
+				} else {
+
+					if ($insertip->rowCount() == 0) {
+
+						$add = strtotime(date("H:i:s"));
+
+						$addlog = Database::$db->prepare('INSERT INTO `visitors` (`ip`,`time`) VALUES (:ip,:timee)');
+						$addlog->bindParam(':ip',$ip,PDO::PARAM_STR);
+						$addlog->bindParam(':timee',$add,PDO::PARAM_STR);
+						$addlog->execute();
+
+					} else {
+
+						$addd = strtotime(date("H:i:s"));
+
+						$addblock = Database::$db->prepare('UPDATE `visitors` SET `block` = `block` + 1 WHERE `ip` = :ip');
+						$addblock->bindParam(':ip',$ip,PDO::PARAM_STR);
+						$addblock->execute();
+					}
 				}
 			}
 		}
@@ -586,6 +690,50 @@
 		}
 	}
 
+	Class Stats {
+
+		public $info;
+
+		public function __construct($id) {
+
+			$getinfo = Database::$db->prepare('SELECT * FROM `stats` WHERE `accId` = :id');
+			$getinfo->bindParam(':id',$id,PDO::PARAM_INT);
+
+			if ($getinfo->execute()) {
+
+				$this->info = $getinfo->fetch(PDO::FETCH_ASSOC);
+
+			}
+		}
+
+		public function accountFame() {
+
+			$fame = $this->info['fame'];
+			return $fame;
+
+		}
+
+		public function accountCredits() {
+
+			$credits = $this->info['credits'];
+			return $credits;
+
+		}
+
+		public function accountTotalFame() {
+
+			$totalf = $this->info['totalFame'];
+			return $totalf;
+
+		}
+
+		public function accountTotalCredits() {
+
+			$totalc = $this->info['totalCredits'];
+			return $totalc;
+		}
+	}
+
 	Class Account {
 
 		public $info;
@@ -632,6 +780,7 @@
 			$time = $this->info['regTime'];
 			return $time;
 		}
+
 	}
 
 
